@@ -4,7 +4,7 @@
 Answer: The size of stable memory available to a canister is  32GiB in October 2022.
 
 2.What is the issue with the following code sample?
-```
+```motoko
 actor {
   let counter : Nat = 0;
   public func increment_counter() : async () {
