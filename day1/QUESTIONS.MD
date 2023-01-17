@@ -36,5 +36,5 @@ There is a issue in here ```var message : Text = 0;```. Always use double qoutes
  
 4. False or True: we can remove the keyword async for return argument of a query function since queries are faster to answer.
 Answer: False, the query function is always need to wait to read data from canister 
-`shared query function must have syntactic return type 'async <typ>'`
+``shared query function must have syntactic return type 'async <typ>'``
 
