@@ -13,6 +13,18 @@ actor ChallengesDay2{
     return (sum/size);
   };
   
-  // 2. 
+  // 2. Character count
+    public query func count_character(t : Text, c : Char) : async Nat{
+    var count: Nat =0;
+    for (letter in Text.toIter(t)){
+      if(letter==c){
+        count+=1;
+      }
+    };
+    return count;
+
+
+  };
+  
   
  }
