@@ -35,5 +35,22 @@ actor ChallengesDay2{
     }
   };
   
+  // 4. number_of_words
+    public query func number_of_words(t : Text) : async Nat {
+    var count: Nat =0;
+    if(t.size()!=0){
+      count+=1;
+
+    }else {
+      for (letter in t.chars()){
+        if (letter ==' '){
+          count+=1;
+        }
+      }
+    };
+    return count;
+  };
+
+// 5. 
   
  }
