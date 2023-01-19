@@ -74,4 +74,13 @@ public  func find_duplicates(a : [Nat]) : async [ Nat]{
     return (Array.freeze<Nat>(duplicate_array));
   };
   
+  // 6. convert_to_binary
+  public func convert_to_binary(n : Nat) : async Text {
+		if (n == 0) {
+			return "0";
+		} else {
+			return (await convert_to_binary(n / 2)) # Nat.toText(n % 2);
+		};
+	};
+  
  }
