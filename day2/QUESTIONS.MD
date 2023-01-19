@@ -40,8 +40,11 @@ actor {
 }
 ```
 **Answer:**
-  a) `Error immutable array expression cannot produce expected type  [var Text] ` to create mutable arrays just like variables you have to use the keyword `var` inside the element of the array. Solution is ```motoko var languages : [var Text] = [var "English", "German", "Chinese", "Japanese", "French"];
+  a) `Error immutable array expression cannot produce expected type  [var Text] ` to create mutable arrays just like variables you have to use the keyword `var` inside the element of the array. Solution is 
+  ```motoko 
+var languages : [var Text] = [var "English", "German", "Chinese", "Japanese", "French"];
 ```
+b) ``shared function has non-shared return type [var Text] type [var Text] is or contains non-shared type var Text ``
 
 6. What is wrong with the following code?
 ```motoko
