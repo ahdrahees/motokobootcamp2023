@@ -1,15 +1,18 @@
 ## Day 2 Motoko Bootcamp
 1.Who controls the ledger canister?
-  **Answer:**  Network Nervous System (NNS) controls the ledger canister.
+
+ **Answer:**  Network Nervous System (NNS) controls the ledger canister.
 
 
 2.What is the subnet of the canister with the id: mwrha-maaaa-aaaab-qabqq-cai? How much nodes are running this subnet?
-  **Answer:**
+
+ **Answer:**
 Subnet ID: pae4o-o6dxf-xki7q-ezclx-znyd6-fnk6w-vkv5z-5lfwh-xym2i-otrrw-fqe
 Node Machines is 16
 
 3.I have a neuron with 1O ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?
-  **Answer:**
+
+ **Answer:**
 
 
 4.What is wrong with the following code?
