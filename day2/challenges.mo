@@ -51,6 +51,27 @@ actor ChallengesDay2{
     return count;
   };
 
-// 5. 
+// 5. find_duplicates
+public  func find_duplicates(a : [Nat]) : async [ Nat]{
+    var duplicate_array : [var Nat]=[var];
+    var indexCount : Nat = 0;
+    
+    for(firstElement in Iter.fromArray(a)){
+      var count: Nat=0;
+      for(checkElement in Iter.fromArray(a)){
+        if(firstElement ==checkElement){
+           count+=1;
+        }
+        
+      };
+      if ( count > 1 ){
+        duplicate_array[indexCount] := firstElement;
+      };
+      indexCount += 1;
+    };
+  /* let array1 = Array.freeze<Nat>(duplicate_array);
+    return array1; */
+    return (Array.freeze<Nat>(duplicate_array));
+  };
   
  }
