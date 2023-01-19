@@ -1,21 +1,21 @@
 ## Day 2 Motoko Bootcamp
-1.Who controls the ledger canister?
+1. Who controls the ledger canister?
 
  **Answer:**  Network Nervous System (NNS) controls the ledger canister.
 
 
-2.What is the subnet of the canister with the id: mwrha-maaaa-aaaab-qabqq-cai? How much nodes are running this subnet?
+2. What is the subnet of the canister with the id: mwrha-maaaa-aaaab-qabqq-cai? How much nodes are running this subnet?
 
  **Answer:**
 Subnet ID: pae4o-o6dxf-xki7q-ezclx-znyd6-fnk6w-vkv5z-5lfwh-xym2i-otrrw-fqe
 Node Machines is 16
 
-3.I have a neuron with 1O ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?
+3. I have a neuron with 1O ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?
 
  **Answer:**
 
 
-4.What is wrong with the following code?
+4. What is wrong with the following code?
 ```motoko
 actor {
   let n : Nat = 50;
@@ -27,8 +27,9 @@ actor {
  }
  ```
  **Answer:**
+ Didn't imported Nat module from base library. ```import Nat "mo:base/Nat";```
 
-5.What is wrong with the following code?
+5. What is wrong with the following code?
 ```motoko
 actor {
   var languages : [var Text] = ["English", "German", "Chinese", "Japanese", "French"];
@@ -40,7 +41,7 @@ actor {
 ```
 **Answer:**
 
-6.What is wrong with the following code?
+6. What is wrong with the following code?
 ```motoko
 actor {
   var languages : [Text] = ["English", "German", "Chinese", "Japanese", "French"];
