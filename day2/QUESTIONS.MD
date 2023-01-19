@@ -40,12 +40,20 @@ actor {
 }
 ```
 **Answer:**
-  a) `Error immutable array expression cannot produce expected type  [var Text] ` to create mutable arrays just like variables you have to use the keyword `var` inside the element of the array. Solution is 
+  a) `Error: immutable array expression cannot produce expected type  [var Text] ` to create mutable arrays just like variables you have to use the keyword `var` inside the element of the array. Solution is 
   ```motoko 
 var languages : [var Text] = [var "English", "German", "Chinese", "Japanese", "French"];
 ```
-b) ``shared function has non-shared return type [var Text] type [var Text] is or contains non-shared type var Text ``
+b) ``shared function has non-shared return type [var Text] type [var Text] is or contains non-shared type var Text `` So solution is make the array in to default mutable form.
+```motoko
+actor {
+  var languages : [ Text] = [ "English", "German", "Chinese", "Japanese", "French"];
 
+    public func show_languages(language : Text) : async [ Text] {
+    return (languages);
+  };
+}
+```
 6. What is wrong with the following code?
 ```motoko
 actor {
@@ -58,3 +66,18 @@ actor {
 }
 ```
 **Answer:**
+deprecated `Array.append` .converting array into buffer, then add element to the buffer, then convert the buffer into array.
+```motoko
+import Buffer "mo:base/Buffer";
+
+actor {
+  var languages : [Text] = ["English", "German", "Chinese", "Japanese", "French"];
+
+  public func add_language(new_language: Text) : async [Text] {
+    let buffer = Buffer.fromArray<Text>(languages);
+    buffer.add(new_language);
+    languages := Buffer.toArray(buffer);
+    return (languages);
+  };
+}
+```
