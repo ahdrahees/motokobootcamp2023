@@ -1,3 +1,5 @@
+import Text "mo:base/Text";
+
 actor ChallengesDay2{
   
   // 1. average_array
@@ -22,8 +24,15 @@ actor ChallengesDay2{
       }
     };
     return count;
-
-
+  };
+  
+  // 3. factorial
+   public func factorial(n : Nat):async Nat{
+    if(n > 0){
+    return n * (await factorial(n-1));
+    }else{
+        return 1;
+    }
   };
   
   
