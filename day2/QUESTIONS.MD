@@ -1,13 +1,13 @@
 ## Day 2 Motoko Bootcamp
 1.Who controls the ledger canister?
-**Answer: **
+**Answer:**
 
 
 2.What is the subnet of the canister with the id: mwrha-maaaa-aaaab-qabqq-cai? How much nodes are running this subnet?
-**Answer: **
+**Answer:**
 
 3.I have a neuron with 1O ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?
-**Answer: **
+**Answer:**
 
 4.What is wrong with the following code?
 ```motoko
@@ -20,7 +20,7 @@ actor {
   };
  }
  ```
- **Answer: **
+ **Answer:**
 
 5.What is wrong with the following code?
 ```motoko
@@ -32,7 +32,7 @@ actor {
   };
 }
 ```
-**Answer: **
+**Answer:**
 
 6.What is wrong with the following code?
 ```motoko
@@ -45,4 +45,4 @@ actor {
   };
 }
 ```
-**Answer: **
+**Answer:**
